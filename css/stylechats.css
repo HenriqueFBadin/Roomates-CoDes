@@ -1,0 +1,30 @@
+h1{
+    font-size: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+h2{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.img{
+    width: 25%;
+    height: auto;
+}
+
+.pessoas{
+    width: 30%;
+    height: auto;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer{
+    width: 48%;
+}
