@@ -40,6 +40,15 @@
     
     
 }
+.linha-header2{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding:0.2rem;
+    
+    
+}
 .coluna2{
     display: flex;
     flex-direction: column;
@@ -47,6 +56,7 @@
     align-items: center;
     max-height: 41rem;
     overflow: scroll;
+    
 }
 .coluna3{
     display: flex;
@@ -55,6 +65,7 @@
     align-items: center;
     max-height: 41rem;
     overflow: scroll;
+    
 }
 .foot{
     display:flex;
@@ -86,6 +97,10 @@
     border-style: solid;
     border-color: black;
 }
+.imgfil{
+    width:3.75rem;
+    height: 3.75rem;
+}
 
 
 .sorte{
@@ -105,6 +120,12 @@
 .padding{
     padding-bottom: 0.9rem;
 }
+.padding2{
+    padding-bottom: 4rem;
+}
+.padding3{
+    padding-bottom: 2.2rem;
+}
 #rectangle{
     width:21rem;
     height: 2.5em;
@@ -114,4 +135,63 @@
     display: flex;
     justify-content: flex-start;
     font-size: 2rem;
+}
+.linhab{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.img4{
+    width: 8rem;
+    height: 4rem;
+    padding-right: 2rem;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.lista{
+    font-size: 2rem;
+    
+}
+.border5{
+    border-left: 0rem;
+    border-right: 0rem;
+    border-bottom: 0.1rem;
+    border-top: 0.1rem;
+    border-style: solid;
+    border-color: black;
+}
+.border6{
+    border-left: 0rem;
+    border-right: 0rem;
+    border-bottom: 0.1rem;
+    border-top: 0rem;
+    border-style: solid;
+    border-color: black;
+}
+.moema{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2rem;
+    padding-right: 15rem;
+}
+.moeme{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2rem;
+    padding-right: 10.8rem;
+}
+.border7{
+    border-left: 0.1rem;
+    border-right: 0.1rem;
+    border-bottom: 0.1rem;
+    border-top: 0.1rem;
+    border-style: solid;
+    border-color: black;
 }
