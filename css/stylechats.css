@@ -72,3 +72,50 @@ ul{
     justify-content: flex-start;
     width: 50%;
 }
+
+.foot{
+    display:flex;
+    justify-content: space-around;
+    padding-bottom: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+}
+
+.linha{
+    display:flex;
+    flex-direction: row;
+}
+.coluna{
+    display:flex;
+    flex-direction:column;
+}
+.fonte{
+    font-size: 4rem;
+
+}
+.fonte_titulo{
+font-size: 6rem;
+
+}
+.imagem{
+    height: 10%;
+    width: 10%;
+}
+.img2{
+    width:3.4rem;
+    height:3.4rem;    
+}
+.imagem_fundo{
+    width:9.4rem;
+    height:9.4rem;  
+
+}
+.fundodatela{
+    display:flex;
+    justify-content: space-around;
+    padding-bottom: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+}
