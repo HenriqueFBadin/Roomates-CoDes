@@ -131,6 +131,21 @@
     height: 2.5em;
     background:white;
 }
+#rectangle1{
+    width:21rem;
+    height: 2.5em;
+    background:white;
+}
+#rectangle2{
+    width:21rem;
+    height: 2.5em;
+    background:white;
+}
+#rectangle3{
+    width:21rem;
+    height: 2.5em;
+    background:white;
+}
 .head{
     display: flex;
     justify-content: flex-start;
