@@ -62,6 +62,7 @@ main {
 
 .dtexto {
     padding: 0.625rem;
+    font-family: 'Bitter', serif;
 }
 
 .caixa {
@@ -113,6 +114,7 @@ main {
     flex-direction: column;
     padding: 0.625rem;
     font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 section {
@@ -125,6 +127,7 @@ section {
     height: 3rem;
     justify-content: space-around;
     align-items: flex-start;   
+    font-family: 'Bitter', serif;
 }
 
 .x {
@@ -135,6 +138,7 @@ section {
     width: 100%;
     font-size: 3rem;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .perfil {

@@ -24,12 +24,12 @@
     border-top: 0.1rem;
     border-style: solid;
     border-color:#c2b792;
-   
-
+    padding-bottom: 0.3rem;
 }
 .title{
     justify-content: center;
     font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
 }
 .linha-header {
     display: flex;
@@ -37,7 +37,7 @@
     justify-content:space-between;
     padding: 1.5rem;
     align-items: center;
-    
+    font-family: 'Roboto', sans-serif;
     
 }
 .linha-header2{
@@ -155,6 +155,7 @@
     display: flex;
     justify-content: flex-start;
     font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
 }
 .linhab{
     display: flex;
@@ -205,12 +206,14 @@
     justify-content: flex-start;
     font-size: 2rem;
     padding-right: 15rem;
+    font-family: 'Roboto', sans-serif;
 }
 .moeme{
     display: flex;
     justify-content: flex-start;
     font-size: 2rem;
-    padding-right: 10.8rem;
+    padding-right: 10.4rem;
+    font-family: 'Roboto', sans-serif;
 }
 .border7{
     border-left: 0.1rem;
