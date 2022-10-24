@@ -23,8 +23,8 @@
     border-bottom: 0.1rem;
     border-top: 0.1rem;
     border-style: solid;
-    border-color: black;
-    padding-bottom: 0.3rem;
+    border-color:#c2b792;
+   
 
 }
 .title{
@@ -130,21 +130,26 @@
     width:21rem;
     height: 2.5em;
     background:white;
+    background-color: #c7c9c9;
+    
 }
 #rectangle1{
     width:21rem;
     height: 2.5em;
     background:white;
+    background-color: #c7c9c9;
 }
 #rectangle2{
     width:21rem;
     height: 2.5em;
     background:white;
+    background-color: #c7c9c9;
 }
 #rectangle3{
     width:21rem;
     height: 2.5em;
     background:white;
+    background-color: #c7c9c9;
 }
 .head{
     display: flex;
@@ -181,6 +186,7 @@
     border-top: 0.1rem;
     border-style: solid;
     border-color: black;
+    background-color: #c7c9c9;
 }
 .border6{
     border-left: 0rem;
@@ -189,6 +195,10 @@
     border-top: 0rem;
     border-style: solid;
     border-color: black;
+    background-color: #c7c9c9;
+}
+.border7{
+    background-color: #c7c9c9
 }
 .moema{
     display: flex;
@@ -209,4 +219,14 @@
     border-top: 0.1rem;
     border-style: solid;
     border-color: black;
+}
+.casa{
+    color: #c2b792 ;
+    font-size: 5rem;
+    
+}
+.casa1{
+    color: #c2b792 ;
+    font-size: 2.5rem;
+    
 }
