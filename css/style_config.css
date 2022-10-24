@@ -8,10 +8,12 @@
 }
 .fonte{
     font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
 
 }
 .fonte_titulo{
-font-size: 6rem;
+    font-size: 6rem;
+    font-family: 'Roboto', sans-serif;
 
 }
 .imagem{
