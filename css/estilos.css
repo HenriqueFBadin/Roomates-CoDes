@@ -3,6 +3,10 @@
     flex-direction: column;
 }
 
+h3{
+    font-family: 'Roboto', sans-serif;
+}
+
 .linha {
     display: flex;
     flex-direction: row;
@@ -188,6 +192,7 @@
     border-style: solid;
     border-color: black;
     background-color: #c7c9c9;
+    font-family: 'Roboto', sans-serif;
 }
 .border6{
     border-left: 0rem;
@@ -197,9 +202,11 @@
     border-style: solid;
     border-color: black;
     background-color: #c7c9c9;
+    font-family: 'Roboto', sans-serif;
 }
 .border7{
-    background-color: #c7c9c9
+    background-color: #c7c9c9;
+    font-family: 'Roboto', sans-serif;
 }
 .moema{
     display: flex;
