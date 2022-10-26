@@ -16,13 +16,26 @@ h3{
 }
 
 .img{
-    width: 25%;
+    width: 100%;
     height: auto;
-    padding-left: 0.5rem;
+    padding-left: 3rem;
+}
+
+main{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+.finaldapagina{
+    display: flex;
+    height: 100%;
 }
 
 .pessoas{
-    width: 30%;
+    width: 100%;
     height: auto;
 }
 
@@ -37,6 +50,16 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .centro{
@@ -68,7 +91,7 @@ section{
     align-content: center;
     padding-top: 40%;
     padding-left: 5%;
-    width: 70%;
+    width: 80%;
     height: auto;
 }
 
@@ -86,6 +109,10 @@ ul{
     position: fixed;
     bottom: 0;
     width:100%;
+}
+
+.botao-footer {
+    max-width: 50px;
 }
 
 .linha{
