@@ -15,22 +15,39 @@ h3{
     font-family: 'Bitter', serif;
 }
 
+header{
+    padding-left: 1rem;
+}
+
 .img{
-    width: 100%;
+    width: 80%;
     height: auto;
     padding-left: 3rem;
 }
 
-main{
-    height: 100%;
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-body{
+main {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
     height: 100%;
+    min-height: 550px;
+    justify-content: space-between;
 }
 
 .finaldapagina{
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0.625rem;
     height: 100%;
 }
 
@@ -88,10 +105,8 @@ section{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-content: center;
     padding-top: 40%;
-    padding-left: 5%;
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 
@@ -130,8 +145,15 @@ ul{
 .fonte_titulo{
 font-size: 6rem;
 font-family: 'Roboto', sans-serif;
-
 }
+
+.fonte_alinhamento{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+}
+
 .imagem{
     height: 10%;
     width: 10%;
