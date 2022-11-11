@@ -8,7 +8,8 @@ const person_1 = {
       return this.firstName + " " + this.lastName;
     },
     photos: img,
-    likes: 0
+    likes: 0,
+    show: true
   };
 
 const person_2 = {
@@ -18,7 +19,8 @@ const person_2 = {
       return this.firstName + " " + this.lastName;
     },
     photos: img_2,
-    likes: 0
+    likes: 0,
+    show: true
   };
 
 document.addEventListener('DOMContentLoaded', function(event){
@@ -69,22 +71,48 @@ document.addEventListener('DOMContentLoaded', function(event){
     likeness = document.querySelectorAll('.confirmar');
 
     likeness[0].addEventListener('click', function(event){
-        dictionary[person_n].likes = dictionary[person_n].likes + 1
-        person_n += 1
-        if (person_n > (dictionary.length - 1)){
-            person_n = 0
-        };
+        if (dictionary[person_n].show == true){
+            dictionary[person_n].likes = dictionary[person_n].likes + 1
+            person_n += 1
+            if (person_n > (dictionary.length - 1)){
+                person_n = 0
+            };
 
-        console.log(dictionary[person_n]);
+            console.log(dictionary[person_n]);
+
+            localStorage.setItem(dictionary[person_n].firstName, dictionary[person_n].likes)
+
+            img_ps = dictionary[person_n].photos[pos_imgs]
+
+            im = document.querySelector('.imagem-pessoa');
+
+            im.src = img_ps;
+
+            dictionary[person_n].show = false
+
+            localStorage.setItem("show", dictionary[person_n].show)
+        };
     });
 
     likeness[1].addEventListener('click', function(event){
-        dictionary[person_n].likes = dictionary[person_n].likes - 1
-        person_n += 1
-        if (person_n > (dictionary.length - 1)){
-            person_n = 0
-        };
+        if (dictionary[person_n].show == true){
+            dictionary[person_n].likes = dictionary[person_n].likes - 1
+            person_n += 1
+            if (person_n > (dictionary.length - 1)){
+                person_n = 0
+            };
 
-        console.log(dictionary[person_n]);
+            console.log(dictionary[person_n]);
+
+            img_ps = dictionary[person_n].photos[pos_imgs]
+
+            im = document.querySelector('.imagem-pessoa');
+
+            im.src = img_ps;
+
+            dictionary[person_n].show = false
+
+            localStorage.setItem("show", dictionary[person_n].show)
+        };
     });
 });
