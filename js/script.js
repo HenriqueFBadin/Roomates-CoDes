@@ -13,8 +13,8 @@ const person_1 = {
   };
 
 const person_2 = {
-    firstName: "Geraldo",
-    lastName : "Cabral",
+    firstName: "Laura",
+    lastName : "Cordeiro",
     fullName : function() {
       return this.firstName + " " + this.lastName;
     },
@@ -72,15 +72,23 @@ document.addEventListener('DOMContentLoaded', function(event){
 
     likeness[0].addEventListener('click', function(event){
         if (dictionary[person_n].show == true){
+
             dictionary[person_n].likes = dictionary[person_n].likes + 1
-            person_n += 1
-            if (person_n > (dictionary.length - 1)){
-                person_n = 0
-            };
+            
+            dictionary[person_n].show = false
+
+            localStorage.setItem(dictionary[person_n].firstName, dictionary[person_n].likes)
+
+            localStorage.setItem("show", dictionary[person_n].show)
 
             console.log(dictionary[person_n]);
 
-            localStorage.setItem(dictionary[person_n].firstName, dictionary[person_n].likes)
+            person_n += 1
+            if (person_n > (dictionary.length - 1)){
+                console.log("Lista de sugestões vazia")
+            };
+
+            console.log(dictionary[person_n]);
 
             img_ps = dictionary[person_n].photos[pos_imgs]
 
@@ -88,18 +96,25 @@ document.addEventListener('DOMContentLoaded', function(event){
 
             im.src = img_ps;
 
-            dictionary[person_n].show = false
-
-            localStorage.setItem("show", dictionary[person_n].show)
         };
     });
 
     likeness[1].addEventListener('click', function(event){
         if (dictionary[person_n].show == true){
+
             dictionary[person_n].likes = dictionary[person_n].likes - 1
+            
+            dictionary[person_n].show = false
+
+            localStorage.setItem(dictionary[person_n].firstName, dictionary[person_n].likes)
+
+            localStorage.setItem("show", dictionary[person_n].show)
+
+            console.log(dictionary[person_n]);
+
             person_n += 1
             if (person_n > (dictionary.length - 1)){
-                person_n = 0
+                console.log("Lista de sugestões vazia")
             };
 
             console.log(dictionary[person_n]);
@@ -110,9 +125,6 @@ document.addEventListener('DOMContentLoaded', function(event){
 
             im.src = img_ps;
 
-            dictionary[person_n].show = false
-
-            localStorage.setItem("show", dictionary[person_n].show)
         };
     });
 });
