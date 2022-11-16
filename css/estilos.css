@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 
-h3{
+.h3_roboto{
     font-family: 'Roboto', sans-serif;
 }
 .fonte{
@@ -100,7 +100,7 @@ h3{
     width:100%;
 }
 
-.img{
+.img0{
     width: 21rem;
     height:7rem;
 }
@@ -197,15 +197,6 @@ h3{
     justify-content: space-between;
 }
 
-.footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
 .lista{
     font-size: 2rem;
     
@@ -265,4 +256,143 @@ h3{
     color: #c2b792 ;
     font-size: 2.5rem;
     
+}
+
+.h1{
+    font-size: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.h2{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.h3{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-family: 'Bitter', serif;
+}
+
+.header1{
+    padding-left: 1rem;
+}
+
+.img{
+    width: 80%;
+    height: auto;
+    padding-left: 3rem;
+}
+
+.body1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main1{
+    display: flex;
+    flex-direction: column;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    height: 100%;
+    min-height: 550px;
+    justify-content: space-between;
+}
+
+.finaldapagina{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0.625rem;
+    height: 100%;
+}
+
+.pessoas{
+    width: 100%;
+    height: auto;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.centro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav{
+    position: fixed;
+    bottom: 0;
+    width: 47%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.mandarmensagem{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 40%;
+    width: 100%;
+    height: auto;
+}
+
+.ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.foot{
+    display:flex;
+    justify-content: space-around;
+    padding-bottom: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+}
+
+.fonte_alinhamento{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+}
+
+footer{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.botao-footer {
+    max-width: 50px;
 }
