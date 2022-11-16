@@ -6,6 +6,16 @@
 h3{
     font-family: 'Roboto', sans-serif;
 }
+.fonte{
+    font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+.fonte_titulo{
+    font-size: 6rem;
+    font-family: 'Roboto', sans-serif;
+
+}
 
 .linha {
     display: flex;
@@ -81,7 +91,14 @@ h3{
 
 
 }
-
+.fundodatela{
+    display:flex;
+    justify-content: space-around;
+    padding-bottom: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+}
 
 .img{
     width: 21rem;
@@ -101,11 +118,24 @@ h3{
     border-style: solid;
     border-color: black;
 }
+.img4{
+    width: 8rem;
+    height: 4rem;
+    padding-right: 2rem;
+}
 .imgfil{
     width:3.75rem;
     height: 3.75rem;
 }
+.imagem{
+    height: 10%;
+    width: 10%;
+}
+.imagem_fundo{
+    width:9.4rem;
+    height:9.4rem;  
 
+}
 
 .sorte{
     display: flex;
@@ -166,11 +196,7 @@ h3{
     flex-direction: row;
     justify-content: space-between;
 }
-.img4{
-    width: 8rem;
-    height: 4rem;
-    padding-right: 2rem;
-}
+
 .footer{
     position: fixed;
     bottom: 0;
