@@ -1,21 +1,14 @@
 /* NÃO ALTERAR */
-body{
+.body{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.coluna {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.linha {
+.linha_filtro {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-
 .header {
     display: flex;
     flex-direction: row;
@@ -25,13 +18,12 @@ body{
     padding-top: 1.688rem;
     padding-bottom: 1.688rem ;
 }
-
-h1 {
+.mainmenu_e_pos_h1 {
     font-size: 3rem;
     color: #c2b792;
 }
 
-main {
+.main_filtro {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,11 +41,6 @@ main {
     margin-top: 3.125rem;
     margin-bottom: 3.125rem;
 }
-
-.imagem {
-    padding: 0.625rem;
-}
-
 .textos {
     display: flex;
     flex-direction: column;
@@ -72,7 +59,7 @@ main {
     align-items: center;
 }
 
-.pessoas {
+.pessoas_filtro {
     border: 0.125rem solid black;
     border-radius: 1rem;
 }
@@ -88,7 +75,7 @@ main {
     padding-left: 1rem;
 }
 
-.footer{
+.footer_filtro{
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -118,7 +105,7 @@ main {
     font-family: 'Roboto', sans-serif;
 }
 
-section {
+.section_filtro {
     width: 100%;
 }
 
@@ -150,11 +137,6 @@ section {
 .img-filtro {
     max-width: 45px;
 }
-
-.botao-footer {
-    max-width: 50px;
-}
-
 .passar {
     max-width: 21px;
     max-height: 107px;
