@@ -5,7 +5,7 @@ const person_1 = {
     firstName: "Pedro",
     lastName : "da Silva",
     fullName : function() {
-      return this.firstName + " " + this.lastName;
+        return this.firstName + " " + this.lastName;
     },
     photos: img,
     likes: 0,
@@ -16,7 +16,7 @@ const person_2 = {
     firstName: "Laura",
     lastName : "Cordeiro",
     fullName : function() {
-      return this.firstName + " " + this.lastName;
+        return this.firstName + " " + this.lastName;
     },
     photos: img_2,
     likes: 0,
