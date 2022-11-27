@@ -24,6 +24,18 @@ const person_2 = {
   };
 
 document.addEventListener('DOMContentLoaded', function(event){
+    botao_aplicar = document.querySelector(".botao-aplicar");
+
+    botao_aplicar.addEventListener("click", function(event){
+        genero_selecionado = document.querySelector('input[name="genero"]:checked').value;
+        localStorage.setItem("genro_escolhido", genero_selecionado);
+
+        localStorage.getItem("genero_escolhido");
+    });
+
+
+    
+
     pos_imgs = 0;
 
     dictionary = [person_1, person_2];
