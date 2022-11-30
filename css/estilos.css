@@ -39,6 +39,18 @@
     border-style: solid;
     border-color:#c2b792;
     padding-bottom: 0.3rem;
+    width:23rem;
+}
+.border4_5{
+
+    border-left: 0.1rem;
+    border-right: 0.1rem;
+    border-bottom: 0.1rem;
+    border-top: 0.1rem;
+    border-style: solid;
+    border-color:#c2b792;
+    padding-bottom: 0.3rem;
+   
 }
 .title{
     justify-content: center;
@@ -229,8 +241,8 @@
     display: flex;
     justify-content: flex-start;
     font-size: 2rem;
-    padding-right: 15rem;
     font-family: 'Roboto', sans-serif;
+    width:100%;
 }
 .moeme{
     display: flex;
