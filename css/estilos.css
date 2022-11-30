@@ -39,6 +39,26 @@
     border-style: solid;
     border-color:#c2b792;
     padding-bottom: 0.3rem;
+    width:23rem;
+}
+.border4_5{
+
+    border-left: 0.1rem;
+    border-right: 0.1rem;
+    border-bottom: 0.1rem;
+    border-top: 0.1rem;
+    border-style: solid;
+    border-color:#c2b792;
+    padding-bottom: 0.3rem;
+   
+}
+
+.enviar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .title{
     justify-content: center;
@@ -229,8 +249,8 @@
     display: flex;
     justify-content: flex-start;
     font-size: 2rem;
-    padding-right: 15rem;
     font-family: 'Roboto', sans-serif;
+    width:100%;
 }
 .moeme{
     display: flex;
@@ -279,10 +299,24 @@
     padding-left: 1rem;
 }
 
+.entrada-msg{
+    width: 100%;
+    margin-right: 1%;
+    border: #482861 1px solid;
+}
+
 .img{
     width: 80%;
     height: auto;
     padding-left: 3rem;
+}
+.imgc{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    height: auto;
 }
 
 .body1{
@@ -299,7 +333,7 @@
     padding-top: 1.5rem;
     padding-bottom: 1rem;
     height: 100%;
-    min-height: 550px;
+    min-height: 35rem;
     justify-content: space-between;
 }
 
@@ -342,16 +376,27 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding-top: 40%;
-    width: 100%;
-    height: auto;
+    width: 150%;
+    height: 100%;
 }
 
+.aref{
+    display: flex;
+    width: 50%;
+}
 .ul{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     width: 50%;
+}
+
+.mandarmensagemul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 3rem;
 }
 
 .foot{
