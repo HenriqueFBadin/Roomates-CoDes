@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', function(event){
         primeiro_top = document.querySelectorAll('.border5')
         dois_a_cinco_top=document.querySelectorAll('.border6')
         sexto_top=document.querySelectorAll('.border7')
+        localStorage["preco"]='Teste'
+        localStorage["tamanho"]='Teste'
+        localStorage["bairro"]='Teste'
         x=lista[0].style.display='none'
         y=lista[1].style.display='none'
         z=lista[2].style.display='none'
@@ -266,21 +269,30 @@ document.addEventListener('DOMContentLoaded', function(event){
 
     }
     if (document.querySelector('.bairro') !=null){
-        console.log(1)
+
         aluguel=document.querySelectorAll('.aluguel')
         bairros=document.querySelectorAll('.bairro')
         areas=document.querySelectorAll('.area')
         img=document.querySelectorAll('.img0')
         filtro=document.querySelector('.imgfil')
-        if(localStorage.getItem("bairro")!=null){
+        console.log(localStorage['preco'])
+        p1=false
+        p2=false
+        p3=false
+
+
+
+        if(localStorage["bairro"]!='Teste'){
             p1=true
-            console.log(0)
+
             for(i of bairros){
-                console.log(localStorage['bairro'])
+
                 i.innerHTML='Bairro:'+' ' + localStorage['bairro']
             }
         }
-        if(localStorage.getItem("preco")!=null){
+        console.log(localStorage['preco'])
+        if(localStorage["preco"]!='Teste'){
+            console.log(1)
             p3=true
             precos=localStorage['preco'].split('-')
             valor=parseInt(precos[0])
@@ -296,7 +308,7 @@ document.addEventListener('DOMContentLoaded', function(event){
             
 
         }
-        if(localStorage.getItem("tamanho")!=null){
+        if(localStorage["tamanho"]!='Teste'){
             p2=true
             tamanhos=localStorage['tamanho'].split('-')
             valor=parseInt(tamanhos[0])
@@ -314,9 +326,9 @@ document.addEventListener('DOMContentLoaded', function(event){
         if(p1||p2||p3){
 
             if(img[0].src=="https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923__340.jpg"){
-                console.log(21)
+
                 img[0].src='https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-                console.log(img[0].src)
+
                 img[1].src='https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1600'
                 img[2].src='https://images.pexels.com/photos/11593507/pexels-photo-11593507.jpeg?auto=compress&cs=tinysrgb&w=1600'
                 img[3].src='https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=1600'
@@ -324,6 +336,12 @@ document.addEventListener('DOMContentLoaded', function(event){
                 
             }
         }
+        filtro.addEventListener('click',function(event){
+            localStorage["preco"]='Teste'
+            localStorage["tamanho"]='Teste'
+            localStorage["bairro"]='Teste'
+
+        })
        
     }
 
