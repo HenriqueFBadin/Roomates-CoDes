@@ -1,7 +1,7 @@
 img = ["img/homem.png", "img/Pedro2.png"];
 img_2 = ["img/Laura.png", "img/mulher.png"];
-img_3 = ["img/Emilia.png", "img/homem.png"];
-img_4 = ["img/Milton.png", "img/milton2.png"];
+img_3 = ["img/Emilia.png", "img/Emilia2.png"];
+img_4 = ["img/Milton.png", "img/Milton2.png"];
 img_fim = ["img/Escudo.png"];
 
 person_1 = {
