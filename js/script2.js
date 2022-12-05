@@ -1,6 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', function(event){
     if(document.querySelector('.lista')!=null){
+        
         img_casa=document.querySelectorAll('.img3');
         vai=document.querySelectorAll('.border4')
         lista=document.querySelectorAll('.lista')
@@ -10,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function(event){
         localStorage["preco"]='Teste'
         localStorage["tamanho"]='Teste'
         localStorage["bairro"]='Teste'
+        localStorage["rd"]='Teste'
         x=lista[0].style.display='none'
         y=lista[1].style.display='none'
         z=lista[2].style.display='none'
@@ -21,7 +23,44 @@ document.addEventListener('DOMContentLoaded', function(event){
         for(i of testes){
             i.style.color='#FFFFFF'
         }
+        if(localStorage['bairro3']==0){
+            testes[0].innerHTML=localStorage['bairro2']
+            if(localStorage['bairro2']!='Teste'){
+                testes[0].style.color='#000000'
+                localStorage['bairro']=localStorage['bairro2']
+            }
+ 
 
+        }
+        if(localStorage['tamanho3']==0){
+            testes[3].innerHTML=localStorage['tamanho2']
+            if(localStorage['tamanho2']!='Teste'){
+                testes[3].style.color='#000000'
+                localStorage['tamanho']=localStorage['tamanho2']
+            }
+ 
+
+        }
+        if(localStorage['preco3']==0){
+            testes[2].innerHTML=localStorage['preco2']
+            if(localStorage['preco2']!='Teste'){
+                testes[2].style.color='#000000'
+                localStorage['preco']=localStorage['preco2']
+            }
+ 
+
+        }
+        if(localStorage['rd3']==0){
+            console.log('entrou')
+            testes[1].innerHTML=localStorage['rd2']
+            console.log(localStorage['rd2'])
+            if(localStorage['rd2']!='Teste'){
+                testes[1].style.color='#000000'
+                localStorage['rd']=localStorage['rd2']
+            }
+ 
+
+        }
         ///lista 1//
         img_casa[0].addEventListener('click',function(event){
             if(pi){
@@ -120,6 +159,7 @@ document.addEventListener('DOMContentLoaded', function(event){
                 testes[1].innerHTML=primeiro_top[1].innerHTML
                 testes[1].style.color='#000000'
                 localStorage.setItem("rd", testes[1]);
+                localStorage['rd']=testes[1].innerHTML
                 y=lista[1].style.display='none'
         
             })
@@ -127,6 +167,7 @@ document.addEventListener('DOMContentLoaded', function(event){
                 testes[1].innerHTML=dois_a_cinco_top[4].innerHTML
                 testes[1].style.color='#000000'
                 localStorage.setItem("rd", testes[1]);
+                localStorage['rd']=testes[1].innerHTML
                 y=lista[1].style.display='none'
         
             })
@@ -134,6 +175,7 @@ document.addEventListener('DOMContentLoaded', function(event){
                 testes[1].innerHTML=dois_a_cinco_top[5].innerHTML
                 testes[1].style.color='#000000'
                 localStorage.setItem("rd", testes[1]);
+                localStorage['rd']=testes[1].innerHTML
                 y=lista[1].style.display='none'
         
             })
@@ -141,6 +183,7 @@ document.addEventListener('DOMContentLoaded', function(event){
                 testes[1].innerHTML=dois_a_cinco_top[6].innerHTML
                 testes[1].style.color='#000000'
                 localStorage.setItem("rd", testes[1]);
+                localStorage['rd']=testes[1].innerHTML
                 y=lista[1].style.display='none'
 
         
@@ -149,6 +192,7 @@ document.addEventListener('DOMContentLoaded', function(event){
                 testes[1].innerHTML=dois_a_cinco_top[7].innerHTML
                 testes[1].style.color='#000000'
                 localStorage.setItem("rd", testes[1]);
+                localStorage['rd']=testes[1].innerHTML
                 y=lista[1].style.display='none'
         
             })
@@ -156,6 +200,7 @@ document.addEventListener('DOMContentLoaded', function(event){
                 testes[1].innerHTML=sexto_top[1].innerHTML
                 testes[1].style.color='#000000'
                 localStorage.setItem("rd", testes[1]);
+                localStorage['rd']=testes[1].innerHTML
                 y=lista[1].style.display='none'
                 
         
@@ -296,6 +341,7 @@ document.addEventListener('DOMContentLoaded', function(event){
             localStorage["preco"]='Teste'
             localStorage["tamanho"]='Teste'
             localStorage["bairro"]='Teste'
+            localStorage['rd']='Teste'
         })
             
 
@@ -383,9 +429,15 @@ document.addEventListener('DOMContentLoaded', function(event){
 
         }
         filtro.addEventListener('click',function(event){
-            localStorage["preco"]='Teste'
-            localStorage["tamanho"]='Teste'
-            localStorage["bairro"]='Teste'
+            localStorage["preco2"]=localStorage["preco"]
+            localStorage["preco3"]=0
+            localStorage["tamanho2"]=localStorage["tamanho"]
+            localStorage["tamanho3"]=0
+            localStorage["bairro2"]=localStorage['bairro']
+            console.log(localStorage['rd'])
+            localStorage['rd2']=localStorage['rd']
+            localStorage['rd3']=0
+            localStorage["bairro3"]=0
 
         })
        
