@@ -1,14 +1,12 @@
 document.addEventListener('DOMContentLoaded', function(){
     main = document.querySelector('main');
+    listamensagens = documento.querySelector('#mensagens')
     var button = document.querySelector(".botao-enviar");
     var input = document.querySelector("input");
     button.addEventListener("click", function(event){
-        console.log("dd");
         var texto = input.value;
-        section_novo = document.createElement("section");
-        section_novo.classList.add('msg-resposta');
-        div1 = document.createElement('div');
-        div1.classList.add("msg-titulo-invertida");
+        li_novo = document.createElement("li");
+        div1 = li_novo.createElement('div');
         h2_1 = document.createElement('h2');
         h2_1.innerHTML = 'Nome do Usuário';
         h3_1 = document.createElement('h3');
@@ -25,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function(){
         span1 = document.createElement('span');
         span1.id = "notificacao-msg-4";
         section_novo.appendChild(span1);
-        main.appendChild(section_novo);
+        listamensagens.appendChild(li_novo);
     });
+
 });
