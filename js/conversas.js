@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function(){
         span1.id = "notificacao-msg-4";
         li_novo.appendChild(span1);
         listamensagens.appendChild(li_novo);
-        if (textosplit.includes("gosta") || textosplit.includes("sair") || textosplit.includes("sair?") || textosplit.includes("festa") || textosplit.includes("festa?")  || textosplit.includes("limpeza") || textosplit.includes("limpeza?") || textosplit.includes("bom") || textosplit.includes("dia!") || textosplit.includes("dia")){
+        if (textosplit.includes("gosta") || textosplit.includes("sair") || textosplit.includes("sair?") || textosplit.includes("festa") || textosplit.includes("festa?")  || textosplit.includes("limpeza") || textosplit.includes("limpeza?") || textosplit.includes("bom") || textosplit.includes("dia!") || textosplit.includes("dia") || textosplit.includes("oi") || textosplit.includes("olá") || textosplit.includes("olá!") || textosplit.includes("oi!")){
             li_novo = document.createElement("li");
             li_novo.classList.add("msg-resposta");
             div1 = document.createElement('div');
@@ -58,6 +58,9 @@ document.addEventListener('DOMContentLoaded', function(){
             p1_2 = document.createElement("p");
             if (textosplit.includes("bom") && (textosplit.includes("dia") || textosplit.includes("dia!"))){
                 p1_2.innerHTML = "Bom dia!";
+            }
+            else if (textosplit.includes("olá") || textosplit.includes("oi") || textosplit.includes("oi!")|| textosplit.includes("olá!")){
+                p1_2.innerHTML = "Olá!";
             }
             else if (textosplit.includes("gosta") && (textosplit.includes("sair") || textosplit.includes("sair?"))){
                 p1_2.innerHTML = "Não muito";
