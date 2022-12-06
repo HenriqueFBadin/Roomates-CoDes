@@ -1,6 +1,6 @@
-img = ["img/homem.png", "img/Pedro2.png"];
-img_2 = ["img/Laura.jpg", "img/mulher.png"];
-img_3 = ["img/Emilia.jpg", "img/Emilia2.jpg"];
+img = ["img/Pedro.png", "img/Pedro2.png"];
+img_2 = ["img/Laura.png", "img/Laura2.png"];
+img_3 = ["img/Emilia.png", "img/Emilia2.png"];
 img_4 = ["img/Milton.png", "img/Milton2.png"];
 img_fim = ["img/Escudo.png"];
 
