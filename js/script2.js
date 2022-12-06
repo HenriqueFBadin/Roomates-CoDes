@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', function(event){
     if(document.querySelector('.lista')!=null){
-        
+       
         img_casa=document.querySelectorAll('.img3');
         vai=document.querySelectorAll('.border4')
         lista=document.querySelectorAll('.lista')
@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function(event){
         localStorage["tamanho"]='Teste'
         localStorage["bairro"]='Teste'
         localStorage["rd"]='Teste'
+        
         x=lista[0].style.display='none'
         y=lista[1].style.display='none'
         z=lista[2].style.display='none'
@@ -51,9 +52,9 @@ document.addEventListener('DOMContentLoaded', function(event){
 
         }
         if(localStorage['rd3']==0){
-            console.log('entrou')
+           
             testes[1].innerHTML=localStorage['rd2']
-            console.log(localStorage['rd2'])
+            
             if(localStorage['rd2']!='Teste'){
                 testes[1].style.color='#000000'
                 localStorage['rd']=localStorage['rd2']
@@ -79,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function(event){
                 testes[0].style.color='#000000'
                 localStorage.setItem('bairro',testes[0])
                 localStorage['bairro']=testes[0].innerHTML
-                console.log(localStorage['bairro'])
+                
                 x=lista[0].style.display='none'
 
                 
@@ -90,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function(event){
                 testes[0].style.color='#000000'
                 localStorage.setItem('bairro',testes[0])
                 localStorage['bairro']=testes[0].innerHTML
-                console.log(localStorage['bairro'])
+                
                 x=lista[0].style.display='none'
                 
         
@@ -100,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function(event){
                 testes[0].style.color='#000000'
                 localStorage.setItem('bairro',testes[0])
                 localStorage['bairro']=testes[0].innerHTML
-                console.log(localStorage['bairro'])
+                
                 x=lista[0].style.display='none'
                 
         
@@ -110,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function(event){
                 testes[0].style.color='#000000'
                 localStorage.setItem('bairro',testes[0])
                 localStorage['bairro']=testes[0].innerHTML
-                console.log(localStorage['bairro'])
+                
                 x=lista[0].style.display='none'
                 
         
@@ -120,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function(event){
                 testes[0].style.color='#000000'
                 localStorage.setItem('bairro',testes[0])
                 localStorage['bairro']=testes[0].innerHTML
-                console.log(localStorage['bairro'])
+                
                 x=lista[0].style.display='none'
                 
         
@@ -130,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function(event){
                 testes[0].style.color='#000000'
                 localStorage.setItem('bairro',testes[0])
                 localStorage['bairro']=testes[0].innerHTML
-                console.log(localStorage['bairro'])
+                
                 x=lista[0].style.display='none'
                 
         
@@ -353,7 +354,7 @@ document.addEventListener('DOMContentLoaded', function(event){
         areas=document.querySelectorAll('.area')
         img=document.querySelectorAll('.img0')
         filtro=document.querySelector('.imgfil')
-        console.log(localStorage['preco'])
+        
         p1=false
         p2=false
         p3=false
@@ -368,9 +369,9 @@ document.addEventListener('DOMContentLoaded', function(event){
                 i.innerHTML='Bairro:'+' ' + localStorage['bairro']
             }
         }
-        console.log(localStorage['preco'])
+        
         if(localStorage["preco"]!='Teste'){
-            console.log(1)
+            
             p3=true
             precos=localStorage['preco'].split('-')
             valor=parseInt(precos[0])
@@ -415,17 +416,33 @@ document.addEventListener('DOMContentLoaded', function(event){
             }
 
         }
+        slot=0
+        console.log(localStorage['entrou'])
         if(p1||p2||p3){
-
-            if(img[0].src=="https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923__340.jpg"){
+            if(localStorage['entrou']==0){
+                console.log('vamos')
+                slot=0
+                localStorage['entrou']=1
+                img[0].src='https://images.pexels.com/photos/259580/pexels-photo-259580.jpeg?auto=compress&cs=tinysrgb&w=1600'
+                img[1].src='https://www.shutterstock.com/image-photo/interior-small-apartment-living-room-260nw-2154108011.jpg'
+                img[2].src='https://images.pexels.com/photos/1827054/pexels-photo-1827054.jpeg?auto=compress&cs=tinysrgb&w=1600'
+                img[3].src='https://images.pexels.com/photos/276666/pexels-photo-276666.jpeg?auto=compress&cs=tinysrgb&w=1600'
+                img[4].src='https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg?auto=compress&cs=tinysrgb&w=1600'
+            }
+            else if(img[0].src=="https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923__340.jpg"){
                 img[0].src='https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-
+                console.log(2343)
+                localStorage['entrou']=0
                 img[1].src='https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1600'
                 img[2].src='https://images.pexels.com/photos/11593507/pexels-photo-11593507.jpeg?auto=compress&cs=tinysrgb&w=1600'
                 img[3].src='https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=1600'
                 img[4].src='https://images.pexels.com/photos/8089185/pexels-photo-8089185.jpeg?auto=compress&cs=tinysrgb&w=1600'
                 
             }
+        
+
+            console.log(slot)
+            console.log(img[1].src)
 
         }
         filtro.addEventListener('click',function(event){
@@ -434,7 +451,7 @@ document.addEventListener('DOMContentLoaded', function(event){
             localStorage["tamanho2"]=localStorage["tamanho"]
             localStorage["tamanho3"]=0
             localStorage["bairro2"]=localStorage['bairro']
-            console.log(localStorage['rd'])
+            
             localStorage['rd2']=localStorage['rd']
             localStorage['rd3']=0
             localStorage["bairro3"]=0
