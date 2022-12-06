@@ -11,6 +11,12 @@
     font-family: 'Roboto', sans-serif;
 
 }
+.fonteconfig{
+    font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
+    padding:1rem
+
+}
 .fonte_titulo{
     font-size: 6rem;
     font-family: 'Roboto', sans-serif;
@@ -699,6 +705,7 @@ padding: 10px 16px;
 background-color: #5cb85c;
 color: white;
 }
+
 
 /* Add Animation */
 @-webkit-keyframes slideIn {
