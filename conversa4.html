@@ -9,21 +9,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    <script src="js/conversas.js"></script>    
 </head>
 
 <body class="body1">
-    <header>
-        <h2>
-            <a href='conversa4.html'><img src="img/Rodrigo.PNG" class="pessoas centro" alt=Joao> </a>
+    <header class="header1">
+        <h2 class="h2">
+            <a href='conversa4.html'><img src="img/Rodrigo.PNG" class="pessoas centro" alt=Rodrigo> </a>
         </h2>
-            <h3>Ultimo visto as 21:00</h3>
+            <h3 class="textosmensagens"> Visto por último às 21:13</h3>
     </header>
 
     <main class="main1">
-        <a href='conversa4.html'><img src="img/ConversaJoao.PNG" class="pessoas" alt=Joao> </a>
+        <ul id="mensagens">
+            <li></li>
+        </ul>
         <ul  class="mandarmensagemul">
             <li class="mandarmensagem">
-                <input class="entrada-msg" type="text" placeholder="Digite sua mensagem">
+                <input class="entrada-msg textosmensagens" type="text" placeholder="Digite sua mensagem">
             </li>
             <li class="enviar"><button class="botao-enviar">></button></li>
             <li class="enviar"><a href=''><img src='img/MandarFoto.png' class="imgc" alt=camera></a></li>
