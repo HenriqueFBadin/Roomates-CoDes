@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function(){
-    now = new Date
     main = document.querySelector('main');
     listamensagens = document.querySelector('#mensagens')
     button = document.querySelector(".botao-enviar");
@@ -20,27 +19,21 @@ document.addEventListener('DOMContentLoaded', function(){
         li_novo.classList.add("msg-usuario");
         div1 = document.createElement('div');
         h2_1 = document.createElement('h2');
-        h2_1.innerHTML = 'Sheyla';
-        h2_1.classList.add("textosmensagens"); 
-        h2_1.classList.add("usuarioresposta");
+        h2_1.innerHTML = 'Nome do Usuário';
         h3_1 = document.createElement('h3');
-        now = new Date
-        h3_1.innerHTML = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
-        h3_1.classList.add("textosmensagens");
-        h3_1.classList.add("usuarioresposta");
+        h3_1.innerHTML = 'Horário';
         div1.appendChild(h2_1);
         div1.appendChild(h3_1);
-        li_novo.appendChild(div1);
+        section_novo.appendChild(div1);
         div2 = document.createElement('div');
+        div2.classList.add("bolha-resposta");
         p1_2 = document.createElement("p");
         p1_2.innerHTML = texto;
-        p1_2.classList.add("textosmensagens");
         div2.appendChild(p1_2);
-        div2.classList.add("bolha-resposta");
-        li_novo.appendChild(div2);
+        section_novo.appendChild(div2);
         span1 = document.createElement('span');
         span1.id = "notificacao-msg-4";
-        li_novo.appendChild(span1);
+        section_novo.appendChild(span1);
         listamensagens.appendChild(li_novo);
         console.log(textosplit.lenght);
         for (var i = 0; i < textosplit.lenght;i++){
