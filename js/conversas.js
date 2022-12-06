@@ -82,7 +82,6 @@ document.addEventListener('DOMContentLoaded', function(){
             span1.id = "notificacao-msg-4";
             li_novo.appendChild(span1);
             listamensagens.appendChild(li_novo);
-        }
+        };
     });
-
 });
