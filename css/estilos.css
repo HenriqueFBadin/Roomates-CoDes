@@ -711,12 +711,12 @@ color: white;
 
 /* Add Animation */
 @-webkit-keyframes slideIn {
-from {bottom: -300px; opacity: 0} 
+from {bottom: -18.75rem; opacity: 0} 
 to {bottom: 0; opacity: 1}
 }
 
 @keyframes slideIn {
-from {bottom: -300px; opacity: 0}
+from {bottom: -18.75rem; opacity: 0}
 to {bottom: 0; opacity: 1}
 }
 
