@@ -491,7 +491,9 @@ align-items: flex-start;
 .body{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .linha_filtro {
     display: flex;
