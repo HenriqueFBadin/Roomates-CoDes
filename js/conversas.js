@@ -8,13 +8,8 @@ document.addEventListener('DOMContentLoaded', function(){
     h3.innerHTML = "Visto por último às " + (now.getHours() - 1) + ":" + now.getMinutes() + ":" + now.getSeconds();
     button.addEventListener("click", function(event){
         var texto = input.value;
-        textosplit = texto.split(" ");
-        for (var i = 0; i < textosplit.lenght; i++){
-            console.log(1);
-            textosplit[i].replace('?',' ');
-            textosplit[i].replace('!',' ');
-        }
-        console.log(textosplit);
+        letraminusculas = texto.toLowerCase();
+        textosplit = letraminusculas.split(" ");
         input.value = "";
         li_novo = document.createElement("li");
         li_novo.classList.add("msg-usuario");
@@ -42,12 +37,7 @@ document.addEventListener('DOMContentLoaded', function(){
         span1.id = "notificacao-msg-4";
         li_novo.appendChild(span1);
         listamensagens.appendChild(li_novo);
-        console.log(textosplit.lenght);
-        for (var i = 0; i < textosplit.lenght;i++){
-            textosplit[i].toLowerCase();
-        }
-        console.log(textosplit);
-        if (textosplit.includes("gosta") || textosplit.includes("sair") || textosplit.includes("festa") || textosplit.includes("limpeza")){
+        if (textosplit.includes("gosta") || textosplit.includes("sair") || textosplit.includes("sair?") || textosplit.includes("festa") || textosplit.includes("festa?")  || textosplit.includes("limpeza") || textosplit.includes("limpeza?") || textosplit.includes("bom") || textosplit.includes("dia!") || textosplit.includes("dia")){
             li_novo = document.createElement("li");
             li_novo.classList.add("msg-resposta");
             div1 = document.createElement('div');
@@ -66,13 +56,16 @@ document.addEventListener('DOMContentLoaded', function(){
             li_novo.appendChild(div1);
             div2 = document.createElement('div');
             p1_2 = document.createElement("p");
-            if (textosplit.includes("gosta") && textosplit.includes("sair")){
+            if (textosplit.includes("bom") && textosplit.includes("dia")){
+                p1_2.innerHTML = "Bom dia!";
+            }
+            else if (textosplit.includes("gosta") && textosplit.includes("sair")){
                 p1_2.innerHTML = "Não muito";
             }
             else if (textosplit.includes("responsável") || textosplit.includes("limpeza")){
                 p1_2.innerHTML = "Gosto da casa sempre bem limpinha, estaria disposta a te ajudar com o possível";
             }
-            else if (textosplit.includes("gosta") || textosplit.includes("festa")){
+            else if (textosplit.includes("gosta") && textosplit.includes("festa")){
                 p1_2.innerHTML = "As vezes, mas só se você também quisesse no caso, geralmente só faço com amigos";
             }
             else{
