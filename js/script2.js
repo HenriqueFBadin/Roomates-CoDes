@@ -10,13 +10,17 @@ document.addEventListener('DOMContentLoaded', function(event){
         localStorage["preco"]='Teste'
         localStorage["tamanho"]='Teste'
         localStorage["bairro"]='Teste'
-        localStorage['rd']='Teste'
+        localStorage["rd"]='Teste'
         x=lista[0].style.display='none'
         y=lista[1].style.display='none'
         z=lista[2].style.display='none'
         a=lista[3].style.display='none'
         pi=true
-        
+        filtro=document.querySelector('.imgfil')
+        filtro.addEventListener('click',function(event){
+            localStorage['rd']='Teste'
+        })
+
 
         testes=document.querySelectorAll('.moema')
         for(i of testes){
