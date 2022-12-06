@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function(event){
         localStorage["preco"]='Teste'
         localStorage["tamanho"]='Teste'
         localStorage["bairro"]='Teste'
+        localStorage['rd']='Teste'
         x=lista[0].style.display='none'
         y=lista[1].style.display='none'
         z=lista[2].style.display='none'
@@ -21,6 +22,35 @@ document.addEventListener('DOMContentLoaded', function(event){
         for(i of testes){
             i.style.color='#FFFFFF'
         }
+        if(localStorage['preco3']==0){
+            testes[2].innerHTML=localStorage['preco2']
+            if(testes[2].innerHTML != 'Teste'){
+                testes[2].style.color='#000000'
+                localStorage['preco']=localStorage['preco2']
+            }
+        }
+        if(localStorage['tamanho3']==0){
+            testes[3].innerHTML=localStorage['tamanho2']
+            if(testes[3].innerHTML != 'Teste'){
+                testes[3].style.color='#000000'
+                localStorage['tamanho']=localStorage['tamanho2']
+            }
+        }
+        if(localStorage['bairro3']==0){
+            testes[0].innerHTML=localStorage['bairro2']
+            if(testes[0].innerHTML != 'Teste'){
+                testes[0].style.color='#000000'
+                localStorage['bairro']=localStorage['bairro2']
+            }
+        }
+        if(localStorage['rd3']==0){
+            testes[1].innerHTML=localStorage['rd2']
+            if(testes[1].innerHTML != 'Teste'){
+                testes[1].style.color='#000000'
+                localStorage['rd']=localStorage['rd2']
+            }
+        }
+
 
         ///lista 1//
         img_casa[0].addEventListener('click',function(event){
@@ -120,6 +150,7 @@ document.addEventListener('DOMContentLoaded', function(event){
                 testes[1].innerHTML=primeiro_top[1].innerHTML
                 testes[1].style.color='#000000'
                 localStorage.setItem("rd", testes[1]);
+                localStorage['rd']=testes[1].innerHTML
                 y=lista[1].style.display='none'
         
             })
@@ -127,6 +158,7 @@ document.addEventListener('DOMContentLoaded', function(event){
                 testes[1].innerHTML=dois_a_cinco_top[4].innerHTML
                 testes[1].style.color='#000000'
                 localStorage.setItem("rd", testes[1]);
+                localStorage['rd']=testes[1].innerHTML
                 y=lista[1].style.display='none'
         
             })
@@ -134,6 +166,7 @@ document.addEventListener('DOMContentLoaded', function(event){
                 testes[1].innerHTML=dois_a_cinco_top[5].innerHTML
                 testes[1].style.color='#000000'
                 localStorage.setItem("rd", testes[1]);
+                localStorage['rd']=testes[1].innerHTML
                 y=lista[1].style.display='none'
         
             })
@@ -141,6 +174,7 @@ document.addEventListener('DOMContentLoaded', function(event){
                 testes[1].innerHTML=dois_a_cinco_top[6].innerHTML
                 testes[1].style.color='#000000'
                 localStorage.setItem("rd", testes[1]);
+                localStorage['rd']=testes[1].innerHTML
                 y=lista[1].style.display='none'
 
         
@@ -149,6 +183,7 @@ document.addEventListener('DOMContentLoaded', function(event){
                 testes[1].innerHTML=dois_a_cinco_top[7].innerHTML
                 testes[1].style.color='#000000'
                 localStorage.setItem("rd", testes[1]);
+                localStorage['rd']=testes[1].innerHTML
                 y=lista[1].style.display='none'
         
             })
@@ -156,6 +191,7 @@ document.addEventListener('DOMContentLoaded', function(event){
                 testes[1].innerHTML=sexto_top[1].innerHTML
                 testes[1].style.color='#000000'
                 localStorage.setItem("rd", testes[1]);
+                localStorage['rd']=testes[1].innerHTML
                 y=lista[1].style.display='none'
                 
         
@@ -243,7 +279,7 @@ document.addEventListener('DOMContentLoaded', function(event){
             primeiro_top[3].addEventListener('click',function(event){
                 testes[3].innerHTML=primeiro_top[3].innerHTML
                 testes[3].style.color='#000000'
-                testes[2].style.color='#000000'
+                //testes[2].style.color='#000000'
                 localStorage.setItem('tamanho',testes[3])
                 localStorage['tamanho']=testes[3].innerHTML
                 a=lista[3].style.display='none'
@@ -296,6 +332,7 @@ document.addEventListener('DOMContentLoaded', function(event){
             localStorage["preco"]='Teste'
             localStorage["tamanho"]='Teste'
             localStorage["bairro"]='Teste'
+            localStorage['rd']="Teste"
         })
             
 
@@ -371,9 +408,18 @@ document.addEventListener('DOMContentLoaded', function(event){
         }
         if(p1||p2||p3){
 
-            if(img[0].src=="https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923__340.jpg"){
-                img[0].src='https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            if(localStorage['entrou']==0){
+                localStorage['entrou']=1
+                img[0].src='https://images.pexels.com/photos/2082087/pexels-photo-2082087.jpeg?auto=compress&cs=tinysrgb&w=1600'
+                img[1].src='https://images.pexels.com/photos/1457841/pexels-photo-1457841.jpeg?auto=compress&cs=tinysrgb&w=1600'
+                img[2].src='https://images.pexels.com/photos/276554/pexels-photo-276554.jpeg?auto=compress&cs=tinysrgb&w=1600'
+                img[3].src='https://images.pexels.com/photos/2030037/pexels-photo-2030037.jpeg?auto=compress&cs=tinysrgb&w=1600'
+                img[4].src='https://images.pexels.com/photos/271795/pexels-photo-271795.jpeg?auto=compress&cs=tinysrgb&w=1600'                
 
+            }
+            else if(img[0].src=="https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923__340.jpg"||img[0].src=='https://images.pexels.com/photos/2082087/pexels-photo-2082087.jpeg?auto=compress&cs=tinysrgb&w=1600'){
+                img[0].src='https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+                localStorage['entrou']=0
                 img[1].src='https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1600'
                 img[2].src='https://images.pexels.com/photos/11593507/pexels-photo-11593507.jpeg?auto=compress&cs=tinysrgb&w=1600'
                 img[3].src='https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=1600'
@@ -383,9 +429,14 @@ document.addEventListener('DOMContentLoaded', function(event){
 
         }
         filtro.addEventListener('click',function(event){
-            localStorage["preco"]='Teste'
-            localStorage["tamanho"]='Teste'
-            localStorage["bairro"]='Teste'
+            localStorage["preco2"]=localStorage['preco']
+            localStorage['preco3']=0
+            localStorage["tamanho2"]=localStorage["tamanho"]
+            localStorage["tamanho3"]=0
+            localStorage["bairro2"]=localStorage["bairro"]
+            localStorage["bairro3"]=0
+            localStorage["rd2"]=localStorage["rd"]
+            localStorage["rd3"]=0
 
         })
        
