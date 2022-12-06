@@ -56,16 +56,16 @@ document.addEventListener('DOMContentLoaded', function(){
             li_novo.appendChild(div1);
             div2 = document.createElement('div');
             p1_2 = document.createElement("p");
-            if (textosplit.includes("bom") && textosplit.includes("dia")){
+            if (textosplit.includes("bom") && (textosplit.includes("dia") || textosplit.includes("dia!"))){
                 p1_2.innerHTML = "Bom dia!";
             }
-            else if (textosplit.includes("gosta") && textosplit.includes("sair")){
+            else if (textosplit.includes("gosta") && (textosplit.includes("sair") || textosplit.includes("sair?"))){
                 p1_2.innerHTML = "Não muito";
             }
-            else if (textosplit.includes("responsável") || textosplit.includes("limpeza")){
+            else if (textosplit.includes("responsável") || textosplit.includes("limpeza") ||  textosplit.includes("limpeza?")){
                 p1_2.innerHTML = "Gosto da casa sempre bem limpinha, estaria disposta a te ajudar com o possível";
             }
-            else if (textosplit.includes("gosta") && textosplit.includes("festa")){
+            else if (textosplit.includes("gosta") && (textosplit.includes("festa") || textosplit.includes("festa?"))){
                 p1_2.innerHTML = "As vezes, mas só se você também quisesse no caso, geralmente só faço com amigos";
             }
             else{
