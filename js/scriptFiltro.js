@@ -58,3 +58,5 @@ document.addEventListener('DOMContentLoaded', function(event){
         document.getElementById(localStorage.orcamento_escolhido).checked = true
     }
 });
+
+console.log(img_fim)

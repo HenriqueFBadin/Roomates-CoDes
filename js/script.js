@@ -1,7 +1,7 @@
 img = ["img/homem.png", "img/Pedro2.png"];
-img_2 = ["img/Laura.png", "img/mulher.png"];
-img_3 = ["img/Emilia.png", "img/Emilia2.png"];
-img_4 = ["img/Milton.png", "img/Milton2.png"];
+img_2 = ["img/Laura.jpg", "img/mulher.png"];
+img_3 = ["img/Emilia.jpg", "img/Emilia2.jpg"];
+img_4 = ["img/Milton.jpg", "img/Milton2.png"];
 img_fim = ["img/Escudo.png"];
 
 person_1 = {
@@ -15,7 +15,7 @@ person_1 = {
     show: true,
     match: 0,
     descricao: "Oi, eu sou o Pedro. Tenho 17 anos, sou uma pessoa muito organizada e que tem aeromodelismo como hobby.",
-    genero: "h"
+    genero: "genero2"
   };
 
 person_2 = {
@@ -29,7 +29,7 @@ person_2 = {
     show: true,
     match: 0,
     descricao: "Laura, 19 anos. Adoro festas, sou meio bagunceira e adoro futebol!",
-    genero: "m"
+    genero: "genero1"
   };
   
 person_3 = {
@@ -43,7 +43,7 @@ person_3 = {
     show: true,
     match: 1,
     descricao: "Meu nome é Emília, sou mineira e acabei de fazer 18 anos e estou me mudando para São Paulo para cursas direito.",
-    genero: "m"
+    genero: "genero1"
   };
   
 person_4 = {
@@ -57,7 +57,7 @@ person_4 = {
     show: true,
     match: 0,
     descricao: "Meu nome é Milton, tenho 24 anos sou goiano, amo música e gasto muito tempo dentro da minha residência.",
-    genero: "h"
+    genero: "genero2"
   };
   
 person_5 = {
@@ -71,14 +71,27 @@ person_5 = {
     show: true,
     match: 0,
     descricao: "",
-    genero: "m"
+    genero: "genero1"
   };
 
 document.addEventListener('DOMContentLoaded', function(event){    
 
+    new_dictionary=[]
+
     pos_imgs = 0;
 
     dictionary = [person_1, person_2, person_3, person_4, person_5];
+
+    if(localStorage.genero_escolhido != null){
+        for(i in dictionary){
+            if (dictionary[i].genero == localStorage.genero_escolhido){
+                new_dictionary.push(dictionary[i])
+            }
+        }
+        dictionary = new_dictionary
+    }
+
+    console.log(dictionary)
 
     person_n = 0;
 
@@ -203,6 +216,8 @@ document.addEventListener('DOMContentLoaded', function(event){
     });
 
     dtexto = document.querySelector('.dtexto');
+
+    dtexto.textContent = dictionary[person_n].descricao
 
     // Get the modal
     var modal = document.getElementById("myModal");
