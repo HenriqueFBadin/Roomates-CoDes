@@ -332,6 +332,7 @@ document.addEventListener('DOMContentLoaded', function(event){
             localStorage["preco"]='Teste'
             localStorage["tamanho"]='Teste'
             localStorage["bairro"]='Teste'
+            localStorage['rd']="Teste"
         })
             
 
