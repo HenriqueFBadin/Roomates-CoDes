@@ -2,7 +2,7 @@ img = ["img/Pedro.png", "img/Pedro2.png"];
 img_2 = ["img/Laura.png", "img/Laura2.png"];
 img_3 = ["img/Emilia.png", "img/Emilia2.png"];
 img_4 = ["img/Milton.png", "img/Milton2.png"];
-img_fim = ["img/Escudo.png"];
+img_fim = ["img/semsugestoes.png", "img/semsugestoes.png"];
 
 person_1 = {
     firstName: "Pedro",
