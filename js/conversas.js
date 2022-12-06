@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function(){
         span1.id = "notificacao-msg-4";
         li_novo.appendChild(span1);
         listamensagens.appendChild(li_novo);
-        if (textosplit.includes("gosta") || textosplit.includes("sair") || textosplit.includes("sair?") || textosplit.includes("festa") || textosplit.includes("festa?")  || textosplit.includes("limpeza") || textosplit.includes("limpeza?") || textosplit.includes("bom") || textosplit.includes("dia!") || textosplit.includes("dia") || textosplit.includes("oi") || textosplit.includes("olá") || textosplit.includes("olá!") || textosplit.includes("oi!")){
+        if (textosplit.includes("gosta") || textosplit.includes("sair") || textosplit.includes("sair?") || textosplit.includes("tudo") ||textosplit.includes("festa") || textosplit.includes("festa?")  || textosplit.includes("limpeza") || textosplit.includes("limpeza?") || textosplit.includes("bom") || textosplit.includes("dia!") || textosplit.includes("dia") || textosplit.includes("oi") || textosplit.includes("olá") || textosplit.includes("olá!") || textosplit.includes("oi!")){
             li_novo = document.createElement("li");
             li_novo.classList.add("msg-resposta");
             div1 = document.createElement('div');
@@ -70,6 +70,9 @@ document.addEventListener('DOMContentLoaded', function(){
             }
             else if (textosplit.includes("gosta") && (textosplit.includes("festa") || textosplit.includes("festa?"))){
                 p1_2.innerHTML = "As vezes, mas só se você também quisesse no caso, geralmente só faço com amigos";
+            }
+            else if (textosplit.includes("tudo") && (textosplit.includes("bem") || textosplit.includes("bem?"))){
+                p1_2.innerHTML = "Tudo sim! Espero que você também";
             }
             else{
                 p1_2.innerHTML = "Não sei bem o que dizer, tente ser mais específica usando as palavras 'gosta', 'sair', 'festa' e 'limpeza'";
