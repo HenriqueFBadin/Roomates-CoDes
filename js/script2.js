@@ -331,7 +331,7 @@ document.addEventListener('DOMContentLoaded', function(event){
 
         
             })
-        cancelar=document.querySelectorAll('.img4')
+        cancelar=document.querySelectorAll('.aplicar')
         cancelar[1].addEventListener('click',function(event){
             localStorage["preco"]='Teste'
             localStorage["tamanho"]='Teste'
