@@ -109,10 +109,10 @@
     padding-top: 0.9rem;
     position: fixed;
     background-color: #c2b792;
-    border-color: #D9AADD;
     border-radius: 0.5rem;
     bottom: 0;
     width:100%;
+    left: 0;    
 }
 .fundodatela{
     display:flex;
