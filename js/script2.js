@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function(event){
         localStorage["tamanho"]='Teste'
         localStorage["bairro"]='Teste'
         localStorage["rd"]='Teste'
+        localStorage['x']=0
         x=lista[0].style.display='none'
         y=lista[1].style.display='none'
         z=lista[2].style.display='none'
@@ -18,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function(event){
         pi=true
         filtro=document.querySelector('.imgfil')
         filtro.addEventListener('click',function(event){
-            localStorage['rd']='Teste'
+            localStorage['x']=1
         })
 
 
@@ -338,10 +339,12 @@ document.addEventListener('DOMContentLoaded', function(event){
             localStorage["bairro"]='Teste'
             localStorage['rd']="Teste"
         })
+
             
 
     }
     if (document.querySelector('.bairro') !=null){
+        console.log(localStorage['x'])
 
         aluguel=document.querySelectorAll('.aluguel')
         bairros=document.querySelectorAll('.bairro')
@@ -355,16 +358,17 @@ document.addEventListener('DOMContentLoaded', function(event){
 
 
 
-        if(localStorage["bairro"]!='Teste'){
+        if(localStorage["bairro"]!='Teste' & localStorage['x']==0){
             p1=true
-
+            localStorage['bairro4']=localStorage['bairro']
             for(i of bairros){
 
                 i.innerHTML='Bairro:'+' ' + localStorage['bairro']
             }
         }
         console.log(localStorage['preco'])
-        if(localStorage["preco"]!='Teste'){
+        if(localStorage["preco"]!='Teste'  & localStorage['x']==0){
+            localStorage['preco4']=localStorage['preco']
             console.log(1)
             p3=true
             precos=localStorage['preco'].split('-')
@@ -381,9 +385,10 @@ document.addEventListener('DOMContentLoaded', function(event){
             
 
         }
-        if(localStorage["tamanho"]!='Teste'){
+        if(localStorage["tamanho"]!='Teste'  & localStorage['x']==0){
             p2=true
             tamanhos=localStorage['tamanho'].split('-')
+            localStorage['tamanho4']=localStorage['tamanho']
             valor=parseInt(tamanhos[0])
   
             c=0
@@ -430,6 +435,12 @@ document.addEventListener('DOMContentLoaded', function(event){
                 img[4].src='https://images.pexels.com/photos/8089185/pexels-photo-8089185.jpeg?auto=compress&cs=tinysrgb&w=1600'
                 
             }
+            localStorage['img0']=img[0].src
+            localStorage['img1']=img[1].src
+            localStorage['img2']=img[2].src
+            localStorage['img3']=img[3].src
+            localStorage['img4']=img[4].src
+            
 
         }
         filtro.addEventListener('click',function(event){
@@ -441,8 +452,68 @@ document.addEventListener('DOMContentLoaded', function(event){
             localStorage["bairro3"]=0
             localStorage["rd2"]=localStorage["rd"]
             localStorage["rd3"]=0
+            localStorage['x']=0
 
         })
+        if(localStorage['x']==1){
+            if(localStorage['bairro4']!=undefined){
+                for(i of bairros){
+
+                    i.innerHTML='Bairro:'+' ' + localStorage['bairro4']
+                }
+            }
+            if(localStorage['tamanho4']!=undefined)
+                tamanhos=localStorage['tamanho4'].split('-')
+                
+                valor=parseInt(tamanhos[0])
+    
+                c=0
+                for(i of areas){
+                    valor+=c
+                    if(valor==0){
+                        i.innerHTML='Área:'+'29'+'m^2'
+
+                    }
+                    if(valor==3){
+                        i.innerHTML='Área:'+'27'+'m^2'
+
+                    }
+                    if(valor==9){
+                        i.innerHTML='Área:'+'24'+'m^2'
+
+                    }
+
+                    if(valor!=9&valor!=3&valor!=0){
+                        i.innerHTML='Área:'+valor.toString()+' '+'m^2'
+                    }
+                    c+=3
+                    
+                }
+            if(localStorage['preco4']!=undefined){
+                precos=localStorage['preco4'].split('-')
+                valor=parseInt(precos[0])
+      
+                c=10
+                for(i of aluguel){
+                    valor+=c
+                    i.innerHTML='Aluguel:R$'+valor.toString()+',00'
+          
+                    c+=43
+                    
+                }
+            }
+            if(localStorage['img0']!=undefined){
+                
+                    img[0].src=localStorage['img0']
+                    img[1].src=localStorage['img1']
+                    img[2].src=localStorage['img2']
+                    img[3].src=localStorage['img3']
+                    img[4].src=localStorage['img4']
+                    
+                    
+                
+            }
+        }
        
     }
 
