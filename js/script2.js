@@ -159,6 +159,7 @@ document.addEventListener('DOMContentLoaded', function(event){
                 y=lista[1].style.display='none'
         
             })
+            
             dois_a_cinco_top[4].addEventListener('click',function(event){
                 testes[1].innerHTML=dois_a_cinco_top[4].innerHTML
                 testes[1].style.color='#000000'
